@@ -1,6 +1,6 @@
 # Frontend Mentor My Custom Huddle Landing Page With Single Introductory Section
 
-![elhart05 github io_Frontend-Mentor-My-Custom-Huddle-Landing-Page-With-Single-Introductory-Section-Master-HTML-CSS-Only_](https://user-images.githubusercontent.com/96151694/154685171-0789341d-f384-4cfb-91c3-44db5a615e0d.png)
+![_C__US~1](https://user-images.githubusercontent.com/96151694/154685274-ccf34d2d-0ed9-41e5-a744-19443a940ce0.PNG)
 
 Simple Challenge By FRONTEND MENTOR Using HTML CSS Only ...
 
