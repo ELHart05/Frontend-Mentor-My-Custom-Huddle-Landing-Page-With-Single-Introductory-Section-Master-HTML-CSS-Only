@@ -1,25 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
-body{
+body {
     background-color: hsl(257, 40%, 49%);
     background-image: url(../images/bg-desktop.png);
     background-repeat: no-repeat;
-    background-attachment: fixed
-    
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.main>* {
+    margin-top: 2%;
 }
 
 
-.logo{
+.logo {
     margin-top: 3%;
     margin-left: 3%;
 }
 
 
-.ill{
+.ill {
     margin-top: 4%;
     margin-left: 8%;
     height: 20%;
@@ -27,35 +39,44 @@ body{
 }
 
 
-.left{
-    float: left;
-    width: 50%;
+.left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
-.right{
+.right {
     width: 47%;
-    float: right;
-    margin-top: 5%;
+    margin-top: 4%;
+    margin-right: 3%;
+    margin-left: 3%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
-h1{
+h1 {
     font-family: 'Poppins', sans-serif;
     color: white;
     font-weight: 600;
-    font-size: 45px;
+    font-size: 40px;
 }
-.l1{
-display: block;
+
+.l1 {
+    display: block;
 }
-.l2{
-display: block;
+
+.l2 {
+    display: block;
 }
 
 
-p{
-    font-size: 20.5px;
+p {
+    font-size: 17px;
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin-top: 3%;
@@ -64,130 +85,152 @@ p{
 }
 
 
-button{
-    margin-top: 4%;
+button {
+    margin-top: 5%;
     border-color: transparent;
     height: 45px;
     width: 155px;
     font-family: 'Poppins', sans-serif;
     border-radius: 400px;
-    color: hsl(257, 40%, 49%); 
+    color: hsl(257, 40%, 49%);
     cursor: pointer;
+    transition: 1s;
 }
-button:hover{
+
+button:hover {
     background-color: hsl(300, 69%, 71%);
     color: white;
 }
 
 
-.sm{
-    float: right;
-    margin-top: 35%;
-    margin-right: 5%;
-    padding-bottom: 20px;
+.sm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+
 }
-.sm > div {
+
+.sm>div {
     border: 1px solid white;
     border-radius: 100%;
     height: 40px;
     width: 40px;
     display: inline-block;
     cursor: pointer;
+    transition: 1s;
 }
-.sm > div:hover{border-color: hsl(300, 69%, 71%);}
-i{
+
+.sm>div:hover {
+    border-color: hsl(300, 69%, 71%);
+}
+
+i {
     color: white;
     height: 25px;
     width: 25px;
-    margin-top: 11px;
-    margin-left: 13px;
+    margin-top: 10px;
+    margin-left: 12px;
     cursor: pointer;
+    transition: 1s;
 }
-i:hover{
+
+i:hover {
     color: hsl(300, 69%, 71%);
 }
-.twitter{margin-left: 10px;}
-.insta{margin-left: 10px;}
-.sm > .facebook > i{margin-left: 14px;}
 
+.twitter {
+    margin-left: 10px;
+}
 
+.insta {
+    margin-left: 10px;
+}
 
-
-@media (max-width: 922px) and (min-width: 50px){
-body{
-    background-image: url(../images/bg-mobile.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
+.sm>.facebook>i {
+    margin-left: 14px;
 }
 
 
-.logo{
-    height: 30%;
-    width: 30%;
-    margin-top: 5%;
-    margin-left: 5%;
-}
 
 
-.left{
-    float: none;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10%;
-}
+@media (max-width: 922px) and (min-width: 50px) {
+    body {
+        background-image: url(../images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+    }
 
 
-.right{
-    width: 100%;
-    float: none;
-    margin: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
+    .main {
+        flex-direction: column;
+    }
+
+    .logo {
+        height: 32%;
+        width: 32%;
+        margin-top: 5%;
+        margin-left: 5%;
+    }
 
 
-.ill{
-    height: 50%;
-    width: 80%;
-    margin-right: 20px;
-}
+    .left {
+        width: 100%;
+        margin: 0;
+    }
 
 
-h1{
-    font-size: 25px;
-    text-align: center;
-    margin-top: 15%;
-}
+    .right {
+        width: 100%;
+        margin: 0;
+        align-items: center;
+    }
 
 
-P{
-    width: 100%;
-    width: 75%;
-    font-size: 15px;
-    text-align: center;
-    margin-top: 5%;
-}
+    .ill {
+        height: 50%;
+        width: 80%;
+        margin-right: 20px;
+    }
 
 
-button{
-    width: 200px;
-    margin-top: 7%;
-}
+    h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-top: 5%;
+    }
 
 
-.sm{float: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10%;
-    margin-right: 0;
-    padding-bottom: 15px;
-}
-.twitter{margin-left: 10px;}
-.insta{margin-left: 10px;}
+    P {
+        width: 100%;
+        width: 75%;
+        font-size: 15px;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+
+    button {
+        width: 200px;
+        margin-top: 5%;
+    }
+
+
+    .sm {
+        position: static;
+        margin-top: 5%;
+        padding-bottom: 2%;
+    }
+
+    .twitter {
+        margin-left: 10px;
+    }
+
+    .insta {
+        margin-left: 10px;
+    }
 }
